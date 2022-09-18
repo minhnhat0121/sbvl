@@ -20,7 +20,7 @@ submit.addEventListener("click", (event) => {
     var expression1 = (Math.sqrt(((4 * ValueP) / (ValueX * Math.PI))))
     var expression2 = (Math.sqrt(((16 * ValueP) / (ValueX * Math.PI))))
     var expression3 = (-ValueP * (ValueB / 10)) / (21000 * ((Math.PI * ((expression1) ** 2)) / 4))
-    var expression4 = (-4 * ValueP * ((valueA + ValueB) / 10)) / (21000 * ((Math.PI * ((expression2) ** 2)) / 4))
+    var expression4 = (-4 * ValueP * ((valueA ) / 10)) / (21000 * ((Math.PI * ((expression2) ** 2)) / 4))
     var result = expression3 + expression4
     element.insertAdjacentHTML("afterend", `    
     <!-- Modal -->

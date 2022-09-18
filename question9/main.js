@@ -13,12 +13,13 @@ const submit = document.querySelector("button")
 submit.addEventListener("click", (event) => {
     event.preventDefault()
     var valueA = parseFloat(question1ValueA.value)
+    var valueA1 = parseFloat(question1ValueA.value)
     var valueQ = parseFloat(question1ValueQ.value)
     var ValueX = parseFloat(question1ValueX.value)
     valueA = valueA * 1000
     var expression1 = ((((5 * valueQ * valueA * valueA) )) / (2 * valueA)) / 10
     var expression2 = (expression1 / ValueX)
-    var expression3 = ((((2 * expression1) - (10 * valueQ * valueA)) * valueA) / (2 * 21000 * expression2))
+    var expression3 = (-expression1 * valueA1 * 100) / (20000 * expression2)
     // homeworkQuestion1.insertAdjacentElement("afterend",`MIN`)
     element.insertAdjacentHTML("afterend", `    
     <!-- Modal -->
@@ -32,7 +33,7 @@ submit.addEventListener("click", (event) => {
             <div class="modal-body">
                 <div>Phản lực tại A là: ${expression1}</div>
                 <div>Tiết diện F là: ${expression2}</div>
-                <div>Tiết diện F là: ${expression3}</div>
+                <div>Chuyển vị qua B là: ${expression3}</div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>

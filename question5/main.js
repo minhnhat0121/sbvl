@@ -22,10 +22,10 @@ submit.addEventListener("click", (event) => {
     var ValueP = parseFloat(question1ValueP.value)
     var ValueQ = parseFloat(question1ValueQ.value)
     console.log(valueA)
-    var expression1 = (((-2 * ValueP) + (ValueB * ValueQ * 0.01)) * (ValueB / 2)) / (21000 * ((ValueD1 ** 2) / 4) * Math.PI)
-    var expression2 = (((-ValueP) + (ValueB * ValueQ * 0.01)) * (valueA)) / (21000 * (((ValueD2 ** 2)) / 4) * Math.PI)
+    var expression1 = (((-2 * ValueP) + (ValueB * ValueQ * 0.01)) * (ValueB / 2)) / (15000 * ((ValueD1 ** 2) / 4) * Math.PI)
+    var expression2 = (((-ValueP) + (ValueB * ValueQ * 0.01)) * (valueA)) / (15000 * (((ValueD2 ** 2)) / 4) * Math.PI)
     var result = expression1 + expression2
-    console.log((((-2 * ValueP) + (ValueB * ValueQ * 0.01)) * (ValueB / 2)))
+    result = result * 10;
     // console.log((21000*((ValueD1**2)/4) * Math.PI))
     // homeworkQuestion1.insertAdjacentElement("afterend",`MIN`)
     element.insertAdjacentHTML("afterend", `    
