@@ -72,4 +72,12 @@ h6 {
 
 .homework-input{
   width: 60%;
+}.homework-question1{
+  border: 5px solid #ade8f4;
+  width: 40%;
+  min-height: 100px;
+  padding: 20px;
+  border-radius: 30px;
+  z-index: 3;
+  background-color: white;
 }

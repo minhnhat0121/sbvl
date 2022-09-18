@@ -34,7 +34,13 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #14213d;
+}
 .homework-question1{
     width: 500px;
     position: absolute;
@@ -62,7 +68,17 @@ h6 {
   margin-top: 20px;
   color: red;
 }
+
 .homework-question1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+}
+
+.homework-input{
+  width: 70%;
+}.homework-question1{
   border: 5px solid #ade8f4;
   width: 40%;
   min-height: 100px;
