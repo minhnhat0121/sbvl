@@ -23,15 +23,13 @@ submit.addEventListener("click", (event) => {
     var ValueES = parseFloat(question1ValueES.value)
     var ValueEA = parseFloat(question1ValueEA.value)
     var ValueD = parseFloat(question1ValueDiameter.value)
-    console.log(valueA)
-    var expression1 = (ValueP2 * valueA * 100) / (ValueES * 100 * ((Math.PI * ((ValueD / 10) ** 2)) / 4))
+    var expression1 = ((ValueP1 - ValueP2) * valueA * 100) / (ValueES * 100 * ((Math.PI * ((ValueD / 10) ** 2)) / 4))
     expression1 = expression1 * 10
     var expression2 = (ValueP1 * ValueB * 100) / (ValueEA * 100 * ((Math.PI * ((ValueD / 10) ** 2)) / 4))
     var expression3 = ((ValueP1 - ValueP2) * valueA * 100) / (ValueES * 100 * ((Math.PI * ((ValueD / 10) ** 2)) / 4))
     var result = expression2 + expression3
     result = result * 10
 
-    // var expression2 = ((-ValueP2 - ValueP1) * valueA * 100) / (21000 * ((Math.PI * (ValueD ** 2)) / 4))
     element.insertAdjacentHTML("afterend", `    
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

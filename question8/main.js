@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 const element = document.querySelector("section")
 const question1ValueA = document.querySelector(".homework-question1-input-valueA")
 const question1ValueB = document.querySelector(".homework-question1-input-valueB")
@@ -19,7 +13,7 @@ submit.addEventListener("click", (event) => {
     var valueX = parseFloat(question1ValueX.value)
     var expression1 = Math.abs((ValueB * ValueP) / ((4 * valueA) + ValueB))
     var expression2 = Math.sqrt(expression1 / (Math.PI * (1 / 4) * valueX))
-    var expression3 = Math.abs((Math.PI * ((expression2 ** 2) / 4) * valueX * valueA * 100) / (21000 * ((Math.PI*(expression2**2))/4)))
+    var expression3 = Math.abs((Math.PI * ((expression2 ** 2) / 4) * valueX * valueA * 100) / (21000 * ((Math.PI * (expression2 ** 2)) / 4)))
 
     var result = expression1 + expression2
     console.log(result)
@@ -36,7 +30,7 @@ submit.addEventListener("click", (event) => {
             <div class="modal-body">
                 <div>Phản lực Na là: ${expression1}</div>
                 <div>Đường kính d là: ${expression2}</div>
-                <div>Chuyển vị của B là: ${expression3}</div>
+                <div>Chuyển vị của B là: ${-expression3}</div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
